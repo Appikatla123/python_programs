@@ -1,0 +1,24 @@
+def swap_first_last(lst):
+    if len(lst)>1:
+lst[0],lst[-1]=lst[-1],lst[0]
+    return lst
+print(swap_first_last([12,35,9,56,27]))
+print(swap_first_last([1,2,3]))
+
+15)Given a list in Python and provided the positions of the elements, write a program to swap the two elements in the list. 
+def swap_elements(lst,pos1,pos2):
+    if pos1<1 or pos1>len(lst) or pos2<1 or pos2>len(lst):
+        return "invalid"
+lst[pos1-1],lst[pos2-1]=lst[pos2-1],lst[pos1-1]
+    return lst
+lst=[1, 2, 3, 4, 5]
+pos1=2
+pos2=5
+print(swap_elements(lst,pos1,pos2))
+
+
+16)Reversing a List in Python
+lst=[4, 5, 6, 7, 8, 9]
+lst.reverse()
+print(lst)
+
